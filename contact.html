@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suggest a Resource</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header>
+        <h1>Suggest a New Resource</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Suggest Resource</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Resource Suggestion Form</h2>
+            <p>
+                Use the form below to suggest a new academic program, online platform,
+                or student community at American College of Technology.
+            </p>
+        </section>
+
+        <section>
+            <form>
+
+                <div>
+                    <label for="resourceName">Resource Name:</label><br>
+                    <input type="text" id="resourceName" name="resourceName" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="category">Category:</label><br>
+                    <select id="category" name="category" required>
+                        <option value="">-- Select Category --</option>
+                        <option value="Undergraduate">Undergraduate</option>
+                        <option value="Postgraduate">Postgraduate</option>
+                        <option value="Online">Online</option>
+                        <option value="Club">Club</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="description">Description:</label><br>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit">Submit Resource</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 American College of Technology</p>
+    </footer>
+
+</body>
+</html>
