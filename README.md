@@ -22,7 +22,7 @@ The website presents information about **American College of Technology (ACT)**,
 - Clean and responsive layout
 - Centered logos and navigation
 - Organized content sections
-- Simple JavaScript for interaction
+- Simple JavaScript for user interaction
 - Beginner-friendly structure
 
 
@@ -38,5 +38,5 @@ The website presents information about **American College of Technology (ACT)**,
 **Institution:** American College of Technology
 
 
-## 📅 Year
+## 📅 Academic Year
 2026
