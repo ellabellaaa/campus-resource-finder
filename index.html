@@ -1,17 +1,18 @@
-<!-- Updated home page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>American College of Technology (ACT)</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
-        <img src="images/act-logo.png" alt="ACT Logo" width="80">
-        <h1>American College of Technology (ACT)</h1>
-
+        <div class="header-content">
+            <img src="images/act-logo.png" alt="ACT Logo" class="logo">
+            <h1>American College of Technology</h1>
+        </div>
+        
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -22,89 +23,70 @@
         </nav>
     </header>
 
-    <hr>
+    <main>
+        <section class="hero">
+            <h2>Quality Education for Global Professionals</h2>
+            <p>Developing competitive professionals in Business and Computer Science through flexible learning.</p>
+            <a href="about.html" class="cta-button">Learn About ACT</a>
+        </section>
 
-    <section>
-        <h2>Welcome to American College of Technology</h2>
-        <p>
-            American College of Technology (ACT) is a higher learning institution
-            dedicated to developing globally competitive professionals in
-            Business Administration and Computer Science.
-        </p>
+        <section class="highlights">
+            <h2>At a Glance</h2>
+            <div class="highlight-grid">
+                <div class="highlight">
+                    <h3>🎓 Programs</h3>
+                    <p>Undergraduate and postgraduate degrees in Business & Computer Science</p>
+                    <a href="programs.html">View Programs →</a>
+                </div>
+                <div class="highlight">
+                    <h3>⚡ Flexibility</h3>
+                    <p>On-campus, online, evening, and weekend classes available</p>
+                </div>
+                <div class="highlight">
+                    <h3>🌍 Global Standards</h3>
+                    <p>Accredited institution with international curriculum</p>
+                </div>
+                <div class="highlight">
+                    <h3>💼 ACT Academy</h3>
+                    <p>Short-term professional training for skill development</p>
+                    <a href="academy.html">Explore Academy →</a>
+                </div>
+            </div>
+        </section>
 
-        <p>
-            ACT offers flexible learning through on-campus and online programs,
-            making education accessible for busy students and working professionals.
-        </p>
-    </section>
+        <section class="featured">
+            <h2>Explore Our Offerings</h2>
+            <div class="featured-links">
+                <a href="programs.html" class="feature-link">
+                    <h3>Degree Programs</h3>
+                    <p>Bachelor's and Master's degrees</p>
+                </a>
+                <a href="academy.html" class="feature-link">
+                    <h3>Professional Training</h3>
+                    <p>Short courses and certifications</p>
+                </a>
+                <a href="resources.html" class="feature-link">
+                    <h3>Student Benefits</h3>
+                    <p>Why students choose ACT</p>
+                </a>
+            </div>
+        </section>
 
-    <hr>
+        <section class="cta">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Contact us today to learn more about admissions and program details.</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </section>
+    </main>
 
-    <section>
-        <h2>Why Choose ACT?</h2>
-        <ul>
-            <li>Fully accredited by the Ethiopian Higher Education Agency</li>
-            <li>Flexible evening, weekend, and online classes</li>
-            <li>Globally competitive curriculum</li>
-            <li>Exclusive Coursera partnership in Ethiopia</li>
-            <li>Affordable and industry-focused programs</li>
-        </ul>
-    </section>
-
-    <hr>
-    <section>
-        <h2>Our Programs</h2>
-
-        <h3>Undergraduate Programs</h3>
-        <ul>
-            <li>BSc in Computer Science</li>
-            <li>BA in Business Administration</li>
-        </ul>
-
-        <h3>Postgraduate & Online Programs</h3>
-        <ul>
-            <li>MSc in Computer Science</li>
-            <li>MBA (On-campus & Online)</li>
-            <li>MA in Project Management</li>
-        </ul>
-    </section>
-
-    <hr>
-    <section>
-        <h2>ACT Academy</h2>
-        <img src="images/act-academy-logo.png" alt="ACT Academy Logo" width="120">
-
-        <p>
-            ACT Academy is an online learning platform that offers flexible,
-            professional training programs in Digital Marketing, Data Science,
-            Programming, and more.
-        </p>
-
-        <p>
-            Learners can study at their own pace and access both free and paid
-            courses anytime, anywhere.
-        </p>
-    </section>
-
-    <hr>
-    <section>
-        <h2>ACT DEV Community</h2>
-        <img src="images/act-dev-logo.png" alt="ACT DEV Community Logo" width="120">
-
-        <p>
-            The ACT DEV Community is a student-led technology club that brings
-            together developers and tech enthusiasts to collaborate, learn,
-            and improve their practical skills.
-        </p>
-    </section>
-
-    <hr>
     <footer>
-        <p>📍 Addis Ababa, 4 Killo, ACT Building</p>
-        <p>📞 +251 955 040 404 | +251 944 150 000</p>
-        <p>© 2026 American College of Technology</p>
+        <div class="footer-info">
+            <p>📍 Addis Ababa, 4 Killo, ACT Building</p>
+            <p>📞 +251 955 040 404</p>
+            <p>© 2026 American College of Technology</p>
+        </div>
     </footer>
-    <script src="js/script.js"></script>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
