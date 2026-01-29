@@ -108,3 +108,17 @@ hr {
     background-color: #ccc;
     margin: 20px 0;
 }
+
+button {
+    background-color: #1c5d99;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b3c5d;
+}

@@ -46,9 +46,36 @@
     </section>
 
     <hr>
+    <section>
+    <h2>Your Feedback Matters</h2>
+    <p>
+        We value your opinion. Please share your feedback about ACT or suggest
+        new courses you would like to learn.
+    </p>
+
+    <button onclick="showFeedbackForm()">Give Feedback</button>
+    <button onclick="showCourseForm()">Suggest a Course</button>
+
+    <div id="feedbackForm" style="display:none; margin-top:20px;">
+        <h3>Feedback About ACT</h3>
+        <textarea id="feedbackText" rows="4" cols="50"
+            placeholder="Write your feedback here..."></textarea><br><br>
+        <button onclick="submitFeedback()">Submit Feedback</button>
+    </div>
+
+    <div id="courseForm" style="display:none; margin-top:20px;">
+        <h3>Suggest a New Course</h3>
+        <input type="text" id="courseName"
+            placeholder="Enter course name"><br><br>
+        <button onclick="submitCourse()">Submit Suggestion</button>
+    </div>
+    </section>
+
+    <hr>
     <footer>
         <p>© 2026 American College of Technology</p>
     </footer>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
