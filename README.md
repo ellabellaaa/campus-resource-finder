@@ -21,7 +21,7 @@ This is a website for American College of Technology (ACT) created as the final 
 3. Use the navigation menu to explore all pages
 
 ## Author
-Eldana Eskinder  
+Eldana Esknder  
 Introduction to Web Development  
 American College of Technology  
 2026
