@@ -1,12 +1,13 @@
 window.onload = function () {
     console.log("Welcome to the ACT Website!");
+
+    const yearElements = document.querySelectorAll(".year");
+    const currentYear = new Date().getFullYear();
+
+    yearElements.forEach(function (element) {
+        element.textContent = currentYear;
+    });
 };
-
-const yearElements = document.querySelectorAll(".year");
-const currentYear = new Date().getFullYear();
-
-yearElements.forEach(function (element) {
-    element.textContent = currentYear;
 
 function showFeedbackForm() {
     document.getElementById("feedbackForm").style.display = "block";
@@ -41,5 +42,3 @@ function submitCourse() {
         document.getElementById("courseName").value = "";
     }
 }
-
-});
