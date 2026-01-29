@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programs - ACT</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <img src="images/act-logo.png" alt="ACT Logo" width="80">
-        <h1>Our Programs</h1>
-
+        <div class="header-content">
+            <img src="images/act-logo.png" alt="ACT Logo" class="logo">
+            <h1>Academic Programs</h1>
+        </div>
+        
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -20,68 +23,143 @@
         </nav>
     </header>
 
-    <hr>
-    <section>
-        <h2>Undergraduate Programs</h2>
-        <ul>
-            <li>BSc in Computer Science</li>
-            <li>BA in Business Administration</li>
-        </ul>
-    </section>
+    <main>
+        <section class="program-intro">
+            <h2>Choose Your Path to Success</h2>
+            <p>ACT offers degree programs designed to prepare you for global career opportunities. All programs include practical projects and industry-relevant curriculum.</p>
+        </section>
 
-    <hr>
-    <section>
-        <h2>Postgraduate Programs (On-Campus)</h2>
-        <ul>
-            <li>MSc in Computer Science</li>
-            <li>MBA (Master of Business Administration)</li>
-        </ul>
-    </section>
+        <section class="degree-programs">
+            <h2>Undergraduate Degree Programs</h2>
+            <p class="duration">4-Year Bachelor's Degrees</p>
+            
+            <div class="program-details">
+                <article class="program">
+                    <h3>BSc in Computer Science</h3>
+                    <p class="program-desc">Comprehensive computer science education covering programming, software engineering, databases, networks, and security.</p>
+                    
+                    <h4>Core Courses:</h4>
+                    <ul>
+                        <li>Programming Fundamentals</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Database Systems</li>
+                        <li>Web Development</li>
+                        <li>Network Security</li>
+                        <li>Software Engineering</li>
+                    </ul>
+                    
+                    <h4>Career Paths:</h4>
+                    <p>Software Developer, Web Developer, Database Administrator, Network Engineer, IT Consultant</p>
+                </article>
+                
+                <article class="program">
+                    <h3>BA in Business Administration</h3>
+                    <p class="program-desc">Business management education covering accounting, marketing, finance, human resources, and entrepreneurship.</p>
+                    
+                    <h4>Core Courses:</h4>
+                    <ul>
+                        <li>Principles of Management</li>
+                        <li>Marketing Management</li>
+                        <li>Financial Accounting</li>
+                        <li>Business Law</li>
+                        <li>Strategic Management</li>
+                        <li>Entrepreneurship</li>
+                    </ul>
+                    
+                    <h4>Career Paths:</h4>
+                    <p>Business Manager, Marketing Specialist, Financial Analyst, HR Manager, Entrepreneur</p>
+                </article>
+            </div>
+        </section>
 
-    <hr>
-    <section>
-        <h2>Online Graduate Programs</h2>
-        <ul>
-            <li>MBA (Master of Business Administration)</li>
-            <li>MA in Project Management</li>
-        </ul>
+        <section class="degree-programs">
+            <h2>Postgraduate Degree Programs</h2>
+            <p class="duration">2-Year Master's Degrees</p>
+            
+            <div class="program-details">
+                <article class="program">
+                    <h3>MSc in Computer Science</h3>
+                    <p class="program-desc">Advanced study in computer science with research components and specialization options.</p>
+                    
+                    <h4>Specializations:</h4>
+                    <ul>
+                        <li>Software Engineering</li>
+                        <li>Data Science</li>
+                        <li>Cybersecurity</li>
+                        <li>Artificial Intelligence</li>
+                    </ul>
+                    
+                    <p><strong>Admission Requirement:</strong> Bachelor's degree in Computer Science or related field</p>
+                </article>
+                
+                <article class="program">
+                    <h3>MBA Program</h3>
+                    <p class="program-desc">Master of Business Administration for aspiring business leaders and managers.</p>
+                    
+                    <h4>Program Features:</h4>
+                    <ul>
+                        <li>Available on-campus and online</li>
+                        <li>Case study methodology</li>
+                        <li>Industry projects</li>
+                        <li>Leadership development</li>
+                    </ul>
+                    
+                    <p><strong>Admission Requirement:</strong> Bachelor's degree in any field + work experience preferred</p>
+                </article>
+            </div>
+        </section>
 
-        <p>
-            These programs are designed for working professionals and are delivered
-            through flexible online and virtual learning sessions.
-        </p>
-    </section>
+        <section class="comparison">
+            <h2>Program Delivery Options</h2>
+            <table>
+                <tr>
+                    <th>Program</th>
+                    <th>On-Campus</th>
+                    <th>Online</th>
+                    <th>Evening/Weekend</th>
+                </tr>
+                <tr>
+                    <td>BSc Computer Science</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>BA Business Admin</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>MSc Computer Science</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>MBA</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                </tr>
+            </table>
+        </section>
 
-    <hr>
-    <section>
-        <h2>Short-Term Training Programs</h2>
+        <section class="next-steps">
+            <h2>Interested in Our Programs?</h2>
+            <p>Contact our admissions office for detailed information about requirements, fees, and application deadlines.</p>
+            <a href="contact.html" class="cta-button">Contact Admissions</a>
+        </section>
+    </main>
 
-        <p>
-            ACT also offers short-term professional training programs designed to
-            help learners gain practical and job-ready skills in a short time.
-        </p>
-
-        <ul>
-            <li>Cybersecurity</li>
-            <li>Digital Marketing</li>
-            <li>Data Science with Python</li>
-            <li>Python Programming</li>
-            <li>Import and Export Training</li>
-        </ul>
-
-        <p>
-            These trainings are affordable, flexible, and suitable for students
-            and working professionals.
-        </p>
-    </section>
-
-    <hr>
     <footer>
-        <p>📍 Addis Ababa, 4 Killo, ACT Building</p>
-        <p>📞 +251 955 040 404 | +251 944 150 000</p>
-        <p>© 2026 American College of Technology</p>
+        <div class="footer-info">
+            <p>📍 Addis Ababa, 4 Killo, ACT Building</p>
+            <p>📞 +251 955 040 404</p>
+            <p>© 2026 American College of Technology</p>
+        </div>
     </footer>
-<script src="js/script.js"></script>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
