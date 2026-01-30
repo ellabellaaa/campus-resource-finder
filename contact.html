@@ -7,25 +7,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="images/act-logo.png" alt="ACT Logo" class="logo">
-            <h1>Contact ACT</h1>
-            <p class="subtitle">Get in Touch With Us</p>
-        </div>
-        
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="programs.html">Programs</a>
-            <a href="academy.html">ACT Academy</a>
-            <a href="resources.html">Why ACT</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+   <header>
+    <img src="images/act-logo.png" alt="ACT Logo" class="logo">
+    <h1>Contact ACT</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="academy.html">ACT Academy</a>
+        <a href="resources.html">Why ACT</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
     <main>
-        <section class="contact-info">
+        <section class="contact-info important-section">
             <h2>General Contact Information</h2>
             
             <div class="contact-details">
@@ -57,7 +53,7 @@
             </div>
         </section>
 
-        <section class="office-hours">
+        <section>
             <h2>Office Hours</h2>
             <table>
                 <tr>
@@ -81,10 +77,10 @@
                     <td>Closed</td>
                 </tr>
             </table>
-            <p class="note">* Evening classes available until 9:00 PM</p>
+            <p>* Evening classes available until 9:00 PM</p>
         </section>
 
-        <section class="departments">
+        <section class="departments important-section">
             <h2>Department Contacts</h2>
             
             <div class="dept-grid">
@@ -132,62 +128,62 @@
             </div>
         </section>
 
-        <section class="contact-form-section">
-            <h2>Send Us a Message</h2>
-            <p>Have questions? Fill out the form below and we'll respond within 24 hours.</p>
+       <section>
+    <h2>Send Us a Message</h2>
+    <div class="form-container">
+        <p>Have questions? Fill out the form below and we'll respond within 24 hours.</p>
+        
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
             
-            <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Full Name *</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your email">
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-                </div>
-                
-                <div class="form-group">
-                    <label for="subject">Subject *</label>
-                    <select id="subject" name="subject" required>
-                        <option value="">Select a subject</option>
-                        <option value="admission">Admission Inquiry</option>
-                        <option value="program">Program Information</option>
-                        <option value="academy">ACT Academy Courses</option>
-                        <option value="feedback">Feedback/Suggestion</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Your Message *</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
             
-            <p class="form-note">* Required fields must be filled</p>
-        </section>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="admission">Admission Inquiry</option>
+                    <option value="program">Program Information</option>
+                    <option value="academy">ACT Academy Courses</option>
+                    <option value="feedback">Feedback/Suggestion</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        
+        <p class="form-note">* Required fields must be filled</p>
+    </div>
+</section>
 
-        <section class="location">
+        <section class="location important-section">
             <h2>Our Location</h2>
-            <div class="map-placeholder">
-                <div class="map-image">
-                    <p>📍 Map would appear here</p>
+            <div>
+                <div>
                     <p>Addis Ababa, 4 Killo</p>
                     <p>ACT Building</p>
                 </div>
                 <div class="location-details">
                     <h3>Getting Here</h3>
-                    <p><strong>By Public Transport:</strong> Take any bus to 4 Killo, near Ethiopian Airlines Head Office</p>
+                    <p><strong>By Public Transport:</strong> Take any bus to 4 Killo</p>
                     <p><strong>By Car:</strong> Parking available on campus premises</p>
-                    <p><strong>Landmark:</strong> Next to Killo Condominium</p>
                 </div>
             </div>
         </section>
