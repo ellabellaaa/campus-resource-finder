@@ -54,39 +54,7 @@ function setupFormValidation() {
     });
 }
 
-function setupMobileMenu() {
-    if (window.innerWidth > 768) return;
-    
-    const nav = document.querySelector('nav');
-    if (!nav) return;
-    
-    const menuButton = document.createElement('button');
-    menuButton.textContent = '☰ Menu';
-    menuButton.style.cssText = `
-        background: #1c5d99;
-        color: white;
-        border: none;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-        cursor: pointer;
-    `;
-    
-    nav.parentNode.insertBefore(menuButton, nav);
-    
-    nav.style.display = 'none';
-    
-    menuButton.addEventListener('click', function() {
-        if (nav.style.display === 'none') {
-            nav.style.display = 'flex';
-            nav.style.flexDirection = 'column';
-            menuButton.textContent = '✕ Close';
-        } else {
-            nav.style.display = 'none';
-            menuButton.textContent = '☰ Menu';
-        }
-    });
-}
+// REMOVED: setupMobileMenu() function
 
 function showFeedbackForm() {
     document.getElementById('feedbackForm').style.display = 'block';
@@ -125,5 +93,4 @@ window.onload = function() {
     
     updateCopyright();
     setupFormValidation();
-    setupMobileMenu();
 };
