@@ -94,7 +94,6 @@ section {
     border-bottom: none;
 }
 
-/* HEADINGS */
 h2 {
     color: #0b3c5d;
     margin-bottom: 20px;
@@ -109,13 +108,11 @@ h3 {
     font-size: 20px;
 }
 
-/* TEXT */
 p {
     margin-bottom: 15px;
     font-size: 16px;
 }
 
-/* LISTS - Using CSS Grid */
 section ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -132,7 +129,6 @@ section ul li {
     border-left: 4px solid #328cc1;
 }
 
-/* TABLES */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -166,7 +162,6 @@ table + p {
     font-size: 14px;
 }
 
-/* FORMS */
 .form-container {
     background-color: #f8f9fa;
     padding: 30px;
@@ -244,7 +239,6 @@ table + p {
     transition: all 0.3s ease;
 }
 
-/* BUTTONS */
 button {
     background-color: #1c5d99;
     color: white;
@@ -260,7 +254,6 @@ button:hover {
     background-color: #0b3c5d;
 }
 
-/* FOOTER */
 footer {
     background-color: #0b3c5d;
     color: white;
@@ -268,10 +261,6 @@ footer {
     padding: 30px;
     margin-top: 50px;
 }
-
-/* RESPONSIVE DESIGN */
-
-/* Tablet */
 @media (max-width: 900px) {
     header img {
         width: 150px;
@@ -290,7 +279,6 @@ footer {
     }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
     header img {
         width: 130px;
