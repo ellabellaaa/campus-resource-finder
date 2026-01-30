@@ -1,6 +1,3 @@
-/* style.css - SIMPLIFIED BEGINNER VERSION */
-
-/* 1. RESET & BASIC STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -9,37 +6,36 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f0f8ff; 
     color: #333;
-    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
-/* 2. HEADER & NAVIGATION (Using FLEXBOX - Required) */
 header {
     background-color: #0b3c5d;
     color: white;
     padding: 20px 0;
+    position: relative;
+}
+header img {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+header h1 {
     text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
 }
-
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo {
-    width: 100px;
-    margin-bottom: 15px;
-}
-
-/* Navigation using FLEXBOX */
 nav {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex; 
     flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 15px;
+    gap: 10px;
 }
 
 nav a {
@@ -48,96 +44,136 @@ nav a {
     padding: 10px 15px;
     background-color: #1c5d99;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 nav a:hover {
     background-color: #328cc1;
 }
-
-/* 3. MAIN CONTENT */
 main {
     max-width: 1200px;
     margin: 30px auto;
     padding: 0 20px;
 }
-
+hr {
+    display: none;
+}
+section {
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 section {
     background-color: white;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.important-section {
+    background-color: #e6f2ff;
+    border-left: 5px solid #1c5d99;
 }
 
-h1, h2, h3 {
-    color: #0b3c5d;
-    margin-bottom: 15px;
+.hero-section {
+    background-color: #0b3c5d;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h2 {
+    color: white;
+    border-bottom: none;
 }
 
 h2 {
-    border-bottom: 2px solid #d9e9f5;
+    color: #0b3c5d;
+    margin-bottom: 20px;
     padding-bottom: 10px;
+    border-bottom: 3px solid #d9e9f5;
+    font-size: 24px;
 }
 
-/* 4. GRID LAYOUTS (Using CSS GRID - Required) */
-.highlight-grid,
-.featured-links,
-.program-details,
-.course-grid,
-.benefit-grid,
-.contact-details {
-    display: grid;
+h3 {
+    color: #1c5d99;
+    margin: 20px 0 15px 0;
+    font-size: 20px;
+}
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+section ul {
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    gap: 15px;
+    margin: 20px 0;
+    padding-left: 0;
 }
 
-.highlight,
-.feature-link,
-.program,
-.course-card,
-.benefit-item,
-.contact-item {
+section ul li {
     background-color: #f8f9fa;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
+    list-style-position: inside;
     border-left: 4px solid #328cc1;
 }
 
-/* 5. FLEXBOX LAYOUTS */
-.mv-container,
-.type-comparison,
-.flex-options {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.mission,
-.vision,
-.type-card,
-.option {
-    flex: 1;
-    min-width: 300px;
-    padding: 20px;
-    background-color: #f8f9fa;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
     border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* 6. FORM STYLES */
-.contact-form {
-    max-width: 600px;
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #0b3c5d;
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+table + p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+}
+.form-container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
     margin: 30px auto;
+    max-width: 800px;
+    border: 2px solid #d9e9f5;
+}
+
+.form-container h3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-container p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: bold;
     color: #0b3c5d;
 }
@@ -146,81 +182,100 @@ h2 {
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #328cc1;
+    outline: none;
+    background-color: #f0f8ff;
+}
+.form-note {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
 }
 
 .submit-btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto 0 auto;
+    padding: 15px;
     background-color: #1c5d99;
     color: white;
-    padding: 12px 30px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
-    display: block;
-    margin: 0 auto;
 }
 
 .submit-btn:hover {
     background-color: #0b3c5d;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
-
-/* 7. BUTTON STYLES */
-.cta-button {
-    display: inline-block;
-    background-color: #328cc1;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-.cta-button:hover {
+button {
     background-color: #1c5d99;
-}
-
-/* 8. TABLE STYLES */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-th {
-    background-color: #0b3c5d;
     color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 5px;
 }
 
-/* 9. FOOTER */
+button:hover {
+    background-color: #0b3c5d;
+}
+
 footer {
     background-color: #0b3c5d;
     color: white;
     text-align: center;
-    padding: 25px;
-    margin-top: 40px;
+    padding: 30px;
+    margin-top: 50px;
 }
-
-/* 10. RESPONSIVE DESIGN (Required) */
-@media (max-width: 768px) {
-    /* Tablet styles */
-    .header-content,
-    main {
-        padding: 0 15px;
+@media (max-width: 900px) {
+    
+    nav {
+        position: static;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    header img {
+        width: 150px;
+    }
+    
+    header h1 {
+        font-size: 24px;
     }
     
     section {
+        padding: 25px;
+    }
+    
+    .form-container {
         padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header img {
+        width: 130px;
+    }
+    
+    header h1 {
+        font-size: 22px;
     }
     
     nav {
@@ -231,50 +286,38 @@ footer {
     nav a {
         width: 100%;
         text-align: center;
+        margin: 5px 0;
     }
     
-    .highlight-grid,
-    .program-details,
-    .course-grid,
-    .benefit-grid {
+    section {
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    section ul {
         grid-template-columns: 1fr;
     }
-}
-
-@media (max-width: 480px) {
-    /* Mobile styles */
-    h1 {
-        font-size: 24px;
+    
+    table {
+        font-size: 14px;
     }
     
-    h2 {
-        font-size: 20px;
+    th, td {
+        padding: 10px;
     }
     
-    .logo {
-        width: 80px;
+    .form-container {
+        padding: 15px;
     }
     
-    .mission,
-    .vision,
-    .type-card,
-    .option {
-        min-width: 100%;
-    }
-    
-    .cta-button,
     .submit-btn {
         width: 100%;
-        text-align: center;
     }
 }
-
-/* 11. SIMPLE HOVER EFFECTS */
-.highlight:hover,
-.feature-link:hover,
-.program:hover,
-.course-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
+.subtitle {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #d9e9f5;
 }
